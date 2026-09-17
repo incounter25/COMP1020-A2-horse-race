@@ -17,7 +17,7 @@ class Horse:
 
     def draw(self):
         self.image.undraw()
-        self.image.draw_at_pos(self.window,self.horse_x,self.y)
+        self.image.draw_at_pos(self.window,self.x_pos,self.y_pos)
 
     def crossed_finish_line(self,x):
         return self.x_pos >= x
