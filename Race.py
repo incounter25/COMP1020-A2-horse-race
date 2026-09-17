@@ -4,23 +4,23 @@ import time
 
 class Horse:
     def __init__(self, speed, y, image, window):
-        self.horse_x = 10
+        self.x_pos = 10
         self.speed =speed
-        self.y = y
+        self.y_pos = y
         self.image = image
         self.window = window
 
         self.speed_dice = Dice(speed)
 
     def move(self):
-        self.horse_x +=  self.speed_dice.roll()
+        self.x_pos +=  self.speed_dice.roll()
 
     def draw(self):
         self.image.undraw()
         self.image.draw_at_pos(self.window,self.horse_x,self.y)
 
     def crossed_finish_line(self,x):
-        return self.horse_x >= x
+        return self.x_pos >= x
 
 
 
