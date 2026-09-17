@@ -5,7 +5,7 @@ import time
 #horse class to represent each racer and movement
 class Horse:
     def __init__(self, speed, y, image, window):
-        self.x_pos = 10
+        self.x_pos = 0
         self.speed =speed
         self.y_pos = y
         self.image = image
