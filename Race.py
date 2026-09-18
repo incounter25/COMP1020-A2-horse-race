@@ -1,3 +1,8 @@
+'''
+#  Assignment 2 - A Horse Race
+#  Name: JangHeon Yoo
+#  uID: u1628436
+'''
 from graphics import *
 from Dice import *
 import time
