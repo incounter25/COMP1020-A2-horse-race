@@ -9,7 +9,7 @@ import time
 
 #horse class to represent each racer and movement
 class Horse:
-    def __init__(self, speed, y, image, window):
+    def __init__(self,speed,y,image,window):
         self.x_pos = 0
         self.speed =speed
         self.y_pos = y
@@ -94,16 +94,12 @@ def main():
             winner_check.append(winner_number)
         winner_number += 1
 
-    # print the winner's naem or Tie player's name
+    # print the winner's naem or Tie 
     if len(winner_check) == 1:
-        print(f"Horse {winner_check[0]} is the winner")
+        print(f"Horse {winner_check[0]} wins")
     if len(winner_check) > 1:
-        tie = f"Tie horse {winner_check[0]}"
-
-        for num in winner_check[1:]:
-            tie = tie + f" with Horse {num}"
-
-        print(tie)
+        print("Tie")
+        
 
     #wiat for a final mouse click before closing the window
     win.getMouse()
